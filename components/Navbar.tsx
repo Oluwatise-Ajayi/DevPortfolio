@@ -23,8 +23,7 @@ const Navbar = () => {
         </div>
       )}
 
-      <div className="flex items-center gap-2 text-green-400 font-mono text-lg font-bold">
-        <Terminal size={20} />
+      <div className="flex items-center gap-2 font-mono text-lg font-bold text-green-400">
         <span>&lt;DevPortfolio/&gt;</span>
       </div>
       

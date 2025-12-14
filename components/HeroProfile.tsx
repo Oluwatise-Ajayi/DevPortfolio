@@ -43,7 +43,7 @@ const HeroProfile = () => {
           <div className="relative">
             <div className="w-32 h-32 rounded-full p-1 border-2 border-green-500/50 shadow-[0_0_20px_rgba(34,197,94,0.2)]">
               <img 
-                src="/profile.png" 
+                src="/profile.jpg" 
                 alt="Profile" 
                 className="w-full h-full rounded-full object-cover bg-gray-800"
               />
