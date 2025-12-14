@@ -8,6 +8,7 @@ import ProjectCard from '../components/ProjectCard';
 import CodeSnippet from '../components/CodeSnippet';
 import Experience from '../components/Experience';
 import Connect from '../components/Connect';
+import Education from '../components/Education';
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <Navbar />
 
       {/* Main Grid Layout (Bento Box) */}
-      <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-4 max-w-7xl mx-auto h-full">
+      <div className="grid grid-cols-1 md:grid-cols-4 auto-rows-[minmax(180px,auto)] gap-4 max-w-7xl mx-auto">
 
         <HeroProfile />
 
@@ -33,6 +34,8 @@ export default function Home() {
         <Experience />
 
         <Connect />
+        
+        <Education />
 
       </div>
     </div>

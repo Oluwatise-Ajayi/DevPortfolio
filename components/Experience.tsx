@@ -13,9 +13,9 @@ const Experience = () => {
          <div className="absolute left-1.5 top-2 bottom-2 w-0.5 bg-gray-800"></div>
          
          {[
-           { role: 'Senior Backend Engineer', company: 'TechCorp Inc', year: '2022 - Present', color: 'bg-green-500' },
-           { role: 'Systems Administrator', company: 'DataFlow Systems', year: '2019 - 2022', color: 'bg-gray-600' },
-           { role: 'DevOps Intern', company: 'StartUp XYZ', year: '2018 - 2019', color: 'bg-gray-600' }
+           { role: 'Backend Developer Intern / Developer Advocate', company: 'Boolbyte', year: 'Jan 2025 - Present', color: 'bg-blue-500' },
+           { role: 'Backend Developer Intern', company: 'HNGi13', year: 'Oct 2025 - Dec 2025', color: 'bg-purple-500' },
+           { role: 'Student Teacher', company: 'TechStudio Academy', year: 'Jun 2022 - Sep 2023', color: 'bg-yellow-500' }
          ].map((job, i) => (
            <div key={i} className="relative pl-6">
              <div className={`absolute left-0 top-1.5 w-3.5 h-3.5 rounded-full border-2 border-[#0e0e0e] ${job.color}`}></div>
