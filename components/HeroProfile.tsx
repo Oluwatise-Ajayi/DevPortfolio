@@ -3,24 +3,12 @@ import React, { useState } from 'react';
 import { Mail, Code2, FileText, Info, Download } from 'lucide-react';
 
 const HeroProfile = () => {
-  const [showToast, setShowToast] = useState(false);
 
-  const handleViewProjects = () => {
-    setShowToast(true);
-    setTimeout(() => setShowToast(false), 3000);
-  };
 
   return (
     <div className="md:col-span-3 md:row-span-2 bg-[#0e0e0e] rounded-3xl p-8 border border-white/5 relative overflow-hidden group">
       {/* Toast Notification */}
-      {showToast && (
-        <div className="absolute top-6 right-6 z-50 animate-in fade-in slide-in-from-top-4 duration-300">
-            <div className="bg-[#1a1a1a] border border-white/10 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3">
-                <Info size={20} className="text-blue-400" />
-                <span className="font-medium">Currently in Development</span>
-            </div>
-        </div>
-      )}
+
 
       {/* Japanese Watermark Background */}
       <div className="absolute -top-4 right-10 text-[8rem] font-black text-white/[0.03] select-none pointer-events-none leading-none z-0 writing-vertical-rl">
@@ -65,12 +53,12 @@ const HeroProfile = () => {
               <a href="mailto:oluwatiseajayi393@gmail.com" className="bg-white text-black font-bold py-3 px-6 rounded-full flex items-center gap-2 hover:bg-gray-200 transition-colors">
                 <Mail size={18} /> Contact Me
               </a>
-              <button 
-                onClick={handleViewProjects}
+              <a 
+                href="/projects"
                 className="bg-transparent border border-white/20 text-white font-bold py-3 px-6 rounded-full flex items-center gap-2 hover:bg-white/10 transition-colors"
               >
                 <Code2 size={18} /> View Projects
-              </button>
+              </a>
               <a 
                 href="/Ajayi Oluwatise Resume.pdf" 
                 download
