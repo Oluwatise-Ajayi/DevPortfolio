@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import { Terminal, Info } from 'lucide-react';
+import { Terminal, Info, Download } from 'lucide-react';
 
 const Navbar = () => {
   const [showToast, setShowToast] = useState(false);
@@ -33,9 +33,13 @@ const Navbar = () => {
         <a href="/skills" className="hover:text-white transition-colors">Stack</a>
       </div>
 
-      <button className="bg-green-500 hover:bg-green-400 text-black font-bold py-2 px-6 rounded-full text-sm transition-all shadow-[0_0_15px_rgba(34,197,94,0.4)]">
-        Resume
-      </button>
+      <a 
+        href="/Ajayi Oluwatise Resume.pdf" 
+        download
+        className="bg-green-500 hover:bg-green-400 text-black font-bold py-2 px-6 rounded-full text-sm transition-all shadow-[0_0_15px_rgba(34,197,94,0.4)] flex items-center gap-2"
+      >
+        <Download size={16} /> Resume
+      </a>
     </nav>
   );
 };

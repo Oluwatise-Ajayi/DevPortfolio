@@ -3,7 +3,7 @@ import { ExternalLink } from 'lucide-react';
 
 const ProjectCard = () => {
   return (
-    <div className="md:col-span-2 md:row-span-1 bg-gradient-to-br from-[#0e0e0e] to-[#1a1a1a] rounded-3xl p-0 border border-white/5 relative overflow-hidden group">
+    <div className="md:col-span-2 md:row-span-1 bg-gradient-to-br from-[#0e0e0e] to-[#1a1a1a] rounded-3xl p-0 border border-white/5 relative overflow-hidden group min-h-[400px] md:min-h-0">
        <div className="absolute inset-0 bg-[url('https://placehold.co/400x200/0f172a/1e293b?text=Notification+System')] opacity-20 mix-blend-overlay"></div>
        <div className="absolute bottom-0 left-0 right-0 h-full bg-gradient-to-t from-black via-black/80 to-transparent p-6 flex flex-col justify-end">
          <div className="flex items-center gap-2 mb-2">

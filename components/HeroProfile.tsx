@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import { Mail, Code2, FileText, Info } from 'lucide-react';
+import { Mail, Code2, FileText, Info, Download } from 'lucide-react';
 
 const HeroProfile = () => {
   const [showToast, setShowToast] = useState(false);
@@ -76,7 +76,7 @@ const HeroProfile = () => {
                 download
                 className="bg-green-500/10 border border-green-500/20 text-green-400 font-bold py-3 px-6 rounded-full flex items-center gap-2 hover:bg-green-500/20 transition-colors"
               >
-                <FileText size={18} /> Resume
+                <Download size={18} /> Resume
               </a>
             </div>
           </div>
