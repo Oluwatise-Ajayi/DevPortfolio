@@ -60,7 +60,7 @@ const HeroProfile = () => {
                 <Code2 size={18} /> View Projects
               </a>
               <a 
-                href="/Ajayi Oluwatise Resume.pdf" 
+                href="/Ajayi Oluwatise CV.pdf" 
                 download
                 className="bg-green-500/10 border border-green-500/20 text-green-400 font-bold py-3 px-6 rounded-full flex items-center gap-2 hover:bg-green-500/20 transition-colors"
               >

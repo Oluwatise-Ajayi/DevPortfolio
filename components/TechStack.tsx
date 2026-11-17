@@ -3,21 +3,17 @@ import { Cpu, CreditCard, Cloud } from 'lucide-react';
 const TechStack = () => {
   const stack = [
     { name: 'TypeScript', slug: 'typescript', hex: '3178C6', color: 'text-blue-400', bg: 'bg-blue-400/10', border: 'border-blue-400/20' },
+    { name: 'Node.js', slug: 'nodedotjs', hex: '339933', color: 'text-green-400', bg: 'bg-green-400/10', border: 'border-green-400/20' },
     { name: 'NestJS', slug: 'nestjs', hex: 'E0234E', color: 'text-red-500', bg: 'bg-red-500/10', border: 'border-red-500/20' },
     { name: 'FastAPI', slug: 'fastapi', hex: '009688', color: 'text-teal-400', bg: 'bg-teal-400/10', border: 'border-teal-400/20' },
-    { name: 'Node.js', slug: 'nodedotjs', hex: '339933', color: 'text-green-400', bg: 'bg-green-400/10', border: 'border-green-400/20' },
     { name: 'PostgreSQL', slug: 'postgresql', hex: '4169E1', color: 'text-blue-300', bg: 'bg-blue-300/10', border: 'border-blue-300/20' },
-    { name: 'Prisma', slug: 'prisma', hex: '2D3748', color: 'text-indigo-400', bg: 'bg-indigo-400/10', border: 'border-indigo-400/20' },
+    { name: 'MongoDB', slug: 'mongodb', hex: '47A248', color: 'text-green-500', bg: 'bg-green-500/10', border: 'border-green-500/20' },
+    { name: 'RabbitMQ', slug: 'rabbitmq', hex: 'FF6600', color: 'text-orange-400', bg: 'bg-orange-400/10', border: 'border-orange-400/20' },
     { name: 'Redis', slug: 'redis', hex: 'DC382D', color: 'text-red-500', bg: 'bg-red-500/10', border: 'border-red-500/20' },
+    { name: 'Prisma', slug: 'prisma', hex: '2D3748', color: 'text-indigo-400', bg: 'bg-indigo-400/10', border: 'border-indigo-400/20' },
     { name: 'Docker', slug: 'docker', hex: '2496ED', color: 'text-blue-500', bg: 'bg-blue-500/10', border: 'border-blue-500/20' },
-    { name: 'AWS', icon: Cloud, hex: 'FF9900', color: 'text-orange-400', bg: 'bg-orange-400/10', border: 'border-orange-400/20' },
-    { name: 'Nginx', slug: 'nginx', hex: '009639', color: 'text-green-500', bg: 'bg-green-500/10', border: 'border-green-500/20' },
-    { name: 'Linux', slug: 'linux', hex: 'FCC624', color: 'text-yellow-200', bg: 'bg-yellow-200/10', border: 'border-yellow-200/20' },
-    { name: 'React', slug: 'react', hex: '61DAFB', color: 'text-cyan-400', bg: 'bg-cyan-400/10', border: 'border-cyan-400/20' },
-    { name: 'Next.js', slug: 'nextdotjs', hex: '000000', color: 'text-white', bg: 'bg-white/10', border: 'border-white/20' },
-    { name: 'Tailwind', slug: 'tailwindcss', hex: '06B6D4', color: 'text-cyan-300', bg: 'bg-cyan-300/10', border: 'border-cyan-300/20' },
+    { name: 'SAP ABAP', slug: 'sap', hex: '0FAAFF', color: 'text-sky-400', bg: 'bg-sky-400/10', border: 'border-sky-400/20' },
     { name: 'Git', slug: 'git', hex: 'F05032', color: 'text-orange-500', bg: 'bg-orange-500/10', border: 'border-orange-500/20' },
-     // Filling remaining space with emerging tech or tooling
     { name: 'Paystack', icon: CreditCard, color: 'text-blue-400', bg: 'bg-blue-400/10', border: 'border-blue-400/20' },
   ];
 

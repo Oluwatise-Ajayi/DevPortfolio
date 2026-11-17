@@ -16,6 +16,7 @@ const Navbar = () => {
       
       <div className="hidden md:flex gap-8 text-sm font-medium text-gray-400">
         <a href="/" className="hover:text-white transition-colors">Home</a>
+        <a href="/experience" className="hover:text-white transition-colors">Experience</a>
         <a href="/projects" className="hover:text-white transition-colors">Projects</a>
         <a href="/skills" className="hover:text-white transition-colors">Stack</a>
       </div>
@@ -32,10 +33,11 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="fixed inset-0 bg-[#050505]/95 backdrop-blur-lg z-40 flex flex-col items-center justify-center gap-8 md:hidden animate-in fade-in duration-200">
             <a href="/" className="text-2xl font-bold text-gray-300 hover:text-white" onClick={() => setIsMenuOpen(false)}>Home</a>
+            <a href="/experience" className="text-2xl font-bold text-gray-300 hover:text-white" onClick={() => setIsMenuOpen(false)}>Experience</a>
             <a href="/projects" className="text-2xl font-bold text-gray-300 hover:text-white" onClick={() => setIsMenuOpen(false)}>Projects</a>
             <a href="/skills" className="text-2xl font-bold text-gray-300 hover:text-white" onClick={() => setIsMenuOpen(false)}>Stack</a>
             <a 
-                href="/Ajayi Oluwatise Resume.pdf" 
+                href="/Ajayi Oluwatise CV.pdf" 
                 download
                 className="bg-green-500 hover:bg-green-400 text-black font-bold py-3 px-8 rounded-full text-lg transition-all shadow-[0_0_15px_rgba(34,197,94,0.4)] flex items-center gap-2"
                 onClick={() => setIsMenuOpen(false)}
@@ -46,7 +48,7 @@ const Navbar = () => {
       )}
 
       <a 
-        href="/Ajayi Oluwatise Resume.pdf" 
+        href="/Ajayi Oluwatise CV.pdf" 
         download
         className="hidden md:flex bg-green-500 hover:bg-green-400 text-black font-bold py-2 px-6 rounded-full text-sm transition-all shadow-[0_0_15px_rgba(34,197,94,0.4)] items-center gap-2"
       >

@@ -1,29 +1,49 @@
 "use client";
 import React, { useState } from 'react';
 import Navbar from '../../components/Navbar';
-import { ExternalLink, Github, Video, MessageSquare, BookOpen, Server } from 'lucide-react';
+import { ExternalLink, Github, Video, MessageSquare, BookOpen, Server, Bot } from 'lucide-react';
 
 export default function Projects() {
   const projects = [
     {
+      title: "Distributed Notification Service",
+      description: "Distributed notification platform using microservices to support email and push notification delivery. Features asynchronous RabbitMQ inter-service communication, Consul service discovery, exponential backoff retries, circuit breakers, dead-letter queues, and Redis-backed idempotency & rate limiting.",
+      tags: ["NestJS", "FastAPI", "RabbitMQ", "PostgreSQL", "Redis", "Consul", "Docker"],
+      icon: <Server size={24} className="text-green-400" />,
+      color: "from-green-500/20 to-emerald-500/5",
+      border: "border-green-500/20",
+      demoLink: null,
+      githubLink: "https://github.com/Oluwatise-Ajayi/Distributed-notification-service"
+    },
+    {
+      title: "Wallet Service API",
+      description: "Digital wallet API supporting deposits, transfers, balance inquiries, and transaction history. Integrated Paystack payment processing & webhooks, database transactions with optimistic locking to prevent concurrent balance conflicts, and JWT, Google OAuth, and scoped API key management.",
+      tags: ["NestJS", "TypeScript", "PostgreSQL", "Prisma", "Paystack", "OAuth", "JWT"],
+      icon: <Server size={24} className="text-teal-400" />,
+      color: "from-teal-500/20 to-green-500/5",
+      border: "border-teal-500/20",
+      demoLink: "https://wallet-service-jade.vercel.app/",
+      githubLink: "https://github.com/Oluwatise-Ajayi/WalletService"
+    },
+    {
+      title: "ServicePulse — AI API Testing & Monitoring Agent",
+      description: "AI-powered agent for conversational API testing and service health monitoring. Integrated the Mastra framework with Telex.im using the A2A protocol, covering HTTP methods, status codes, response times, headers, payload validation, caching, and health checks.",
+      tags: ["TypeScript", "Mastra", "Google Gemini", "A2A", "JSON-RPC 2.0"],
+      icon: <Bot size={24} className="text-emerald-400" />,
+      color: "from-emerald-500/20 to-cyan-500/5",
+      border: "border-emerald-500/20",
+      demoLink: null,
+      githubLink: "https://github.com/Oluwatise-Ajayi"
+    },
+    {
       title: "KazeWallet",
       description: "Digital wallet application for secure transactions and asset management.",
       tags: ["Digital Wallet", "Frontend", "Secure"],
-      icon: <ExternalLink size={24} className="text-teal-400" />,
-      color: "from-teal-500/20 to-green-500/5",
-      border: "border-teal-500/20",
+      icon: <ExternalLink size={24} className="text-blue-400" />,
+      color: "from-blue-500/20 to-cyan-500/5",
+      border: "border-blue-500/20",
       demoLink: "https://kazewallet.onrender.com/docs",
       githubLink: "https://github.com/Oluwatise-Ajayi/KazeWallet"
-    },
-    {
-      title: "WalletService",
-      description: "Robust backend service handling wallet operations, transactions, and security protocols.",
-      tags: ["Backend", "Wallet", "Transactions"],
-      icon: <Server size={24} className="text-gray-400" />,
-      color: "from-gray-500/20 to-slate-500/5",
-      border: "border-gray-500/20",
-      demoLink: "https://wallet-service-jade.vercel.app/",
-      githubLink: "https://github.com/Oluwatise-Ajayi/WalletService"
     },
     {
       title: "AI Chatbot",
@@ -44,16 +64,6 @@ export default function Projects() {
       border: "border-yellow-500/20",
       demoLink: "https://blogsite-demo.onrender.com/",
       githubLink: "https://github.com/Oluwatise-Ajayi/Blog-Site"
-    },
-    {
-      title: "Distributed Notification Service (Team Project)",
-      description: "Microservices platform for email & push notifications with async RabbitMQ workflows, service discovery, retries & monitoring. Designed and implemented user CRUD logic with NestJS + TypeScript.",
-      tags: ["FastAPI", "NestJS", "RabbitMQ", "Redis"],
-      icon: <Server size={24} className="text-green-400" />,
-      color: "from-green-500/20 to-emerald-500/5",
-      border: "border-green-500/20",
-      demoLink: null,
-      githubLink: "https://github.com/Oluwatise-Ajayi/Distributed-notification-service"
     },
     {
       title: "HNG13 Currency Exchange",

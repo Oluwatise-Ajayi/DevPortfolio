@@ -56,51 +56,57 @@ const SkillsPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           
           <SkillCategory 
-            title="Programming Languages" 
+            title="Languages" 
             icon={Code2}
-            skills={['TypeScript', 'JavaScript', 'Python', 'SQL']} 
+            skills={['TypeScript', 'JavaScript', 'Python', 'SQL', 'ABAP']} 
           />
 
           <SkillCategory 
-            title="Libraries & Frameworks" 
-            icon={Layout}
-            skills={['React.js', 'Next.js', 'NestJS', 'FastAPI', 'Express.js', 'Prisma', 'TypeORM', 'Tailwind CSS', 'NextAuth.js']} 
+            title="Backend & APIs" 
+            icon={Server}
+            skills={['Node.js', 'NestJS', 'FastAPI', 'Express.js', 'REST APIs', 'OpenAPI/Swagger', 'Next.js', 'React.js']} 
           />
 
            <SkillCategory 
-            title="Databases & Data Tools" 
+            title="Databases & ORMs" 
             icon={Database}
-            skills={['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Firebase']} 
+            skills={['PostgreSQL', 'MySQL', 'MongoDB', 'Prisma', 'TypeORM', 'Redis']} 
           />
 
           <SkillCategory 
-            title="DevOps & Cloud" 
+            title="Messaging & Reliability" 
+            icon={Network}
+            skills={['RabbitMQ', 'Redis', 'BullMQ', 'Consul', 'Circuit Breakers', 'Dead-Letter Queues']} 
+          />
+
+          <SkillCategory 
+            title="DevOps & Delivery" 
             icon={Cloud}
-            skills={['Docker', 'Kubernetes', 'AWS', 'Google Cloud', 'Vercel', 'Nginx', 'GitHub Actions', 'CI/CD', 'Linux', 'Kafka']} 
+            skills={['Docker', 'GitHub Actions', 'CI/CD', 'Git', 'Nx Monorepos', 'Postman', 'Linux', 'Nginx', 'AWS']} 
           />
 
           <SkillCategory 
-            title="AI & Machine Learning" 
-            icon={Brain}
-            skills={['OpenAI API', 'Vercel AI SDK', 'Mastra AI', 'Deep Learning']} 
+            title="Enterprise Technologies" 
+            icon={Settings}
+            skills={['SAP ABAP', 'ABAP RAP', 'CDS Views', 'OData']} 
           />
           
           <SkillCategory 
-            title="Architecture & Security" 
-            icon={Network}
-            skills={['RESTful APIs', 'Microservices', 'Clean Architecture', 'JWT Authentication', 'RBAC', 'System Design']} 
+            title="Integrations & Security" 
+            icon={CreditCard}
+            skills={['Paystack SDK', 'OAuth 2.0', 'JWT Authentication', 'RBAC', 'API Key Management', 'Webhooks']} 
           />
 
            <SkillCategory 
-            title="Tools & Environment" 
-            icon={Terminal}
-            skills={['Git', 'VS Code', 'Cursor', 'Nx Monorepos', 'ESLint', 'Webpack', 'Antigravity']} 
+            title="AI & Agent Protocols" 
+            icon={Brain}
+            skills={['Mastra AI', 'Google Gemini', 'OpenAI API', 'A2A Protocol', 'JSON-RPC 2.0', 'Vercel AI SDK']} 
           />
 
           <SkillCategory 
-            title="Payments & Integrations" 
-            icon={CreditCard}
-            skills={['Paystack', 'Webhooks', 'Third-party APIs']} 
+            title="Tools & Environment" 
+            icon={Terminal}
+            skills={['VS Code', 'Cursor', 'Antigravity', 'Postman', 'ESLint']} 
           />
 
         </div>

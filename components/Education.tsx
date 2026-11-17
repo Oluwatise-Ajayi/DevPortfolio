@@ -6,9 +6,9 @@ const Education = () => {
     const [progress, setProgress] = useState(0);
 
     useEffect(() => {
-        // Timeline: Jan 2021 - July 2027
-        const startDate = new Date('2021-01-01').getTime();
-        const endDate = new Date('2027-07-01').getTime();
+        // Timeline: Oct 2021 - Aug 2027
+        const startDate = new Date('2021-10-01').getTime();
+        const endDate = new Date('2027-08-01').getTime();
         const now = new Date().getTime();
 
         const totalDuration = endDate - startDate;
@@ -23,20 +23,25 @@ const Education = () => {
 
   return (
     <div className="md:col-span-2 md:row-span-1 bg-[#0e0e0e] rounded-3xl p-6 border border-white/5 flex flex-col justify-between">
-       <div className="flex items-center gap-2 mb-2 text-blue-400">
-         <GraduationCap size={20} />
-         <h3 className="font-bold text-white">Education</h3>
+       <div className="flex items-center justify-between mb-2">
+         <div className="flex items-center gap-2 text-blue-400">
+           <GraduationCap size={20} />
+           <h3 className="font-bold text-white">Education</h3>
+         </div>
+         <span className="text-xs font-mono text-green-400 bg-green-500/10 border border-green-500/20 px-2.5 py-0.5 rounded-full">
+           CGPA: 3.67/5.00
+         </span>
        </div>
 
        <div>
-           <h4 className="text-xl font-bold text-white">University of Lagos</h4>
-           <p className="text-gray-400 text-sm">B.Sc. Systems Engineering</p>
+           <h4 className="text-xl font-bold text-white">University of Lagos (UNILAG)</h4>
+           <p className="text-gray-400 text-sm">B.Sc. in Systems Engineering</p>
        </div>
        
        <div className="mt-6">
            <div className="flex justify-between text-xs text-gray-500 font-mono mb-2">
-               <span>2021</span>
-               <span>July 2027</span>
+               <span>Oct 2021</span>
+               <span>Aug 2027 (Expected)</span>
            </div>
            
            {/* Progress Line */}
