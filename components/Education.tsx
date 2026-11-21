@@ -28,9 +28,6 @@ const Education = () => {
            <GraduationCap size={20} />
            <h3 className="font-bold text-white">Education</h3>
          </div>
-         <span className="text-xs font-mono text-green-400 bg-green-500/10 border border-green-500/20 px-2.5 py-0.5 rounded-full">
-           CGPA: 3.67/5.00
-         </span>
        </div>
 
        <div>

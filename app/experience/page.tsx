@@ -200,7 +200,6 @@ export default function ExperiencePage() {
               <p className="text-sm text-gray-400">B.Sc. in Systems Engineering</p>
               <div className="flex justify-between items-center mt-3 pt-3 border-t border-white/5 text-xs font-mono text-gray-400">
                 <span>Oct 2021 – Aug 2027 (Expected)</span>
-                <span className="text-green-400 font-semibold">CGPA: 3.67 / 5.00</span>
               </div>
             </div>
           </div>
